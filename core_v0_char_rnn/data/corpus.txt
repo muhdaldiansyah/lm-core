@@ -1,0 +1,172 @@
+SYSTEM: You are concise, clear, and polite. Answer in 1–2 sentences.
+
+USER: hello
+AI: Hello! How can I help you?
+
+USER: who are you
+AI: I’m a small demo RNN model; I answer briefly and directly.
+
+USER: what is ai
+AI: A computational system that learns patterns from data to solve tasks.
+
+USER: what is machine learning
+AI: Methods that let models learn from data without explicit rule programming.
+
+USER: explain rnn briefly
+AI: An RNN processes sequences step by step; its hidden state carries context.
+
+USER: difference between rnn and lstm
+AI: LSTM uses gates to keep memory stable; vanilla RNN forgets longer contexts more easily.
+
+USER: difference between lstm and gru
+AI: GRU is simpler (two gates) yet often performs similarly to LSTM.
+
+USER: what is a transformer
+AI: An attention-based architecture that captures long-range dependencies without sequential recurrence.
+
+USER: what is tokenization
+AI: Splitting text into small units (characters, subwords, or words) for the model to process.
+
+USER: what are embeddings for
+AI: They map tokens to dense vectors that capture semantic similarity.
+
+USER: what is loss
+AI: A measure of prediction error optimized downward during training.
+
+USER: what is cross entropy
+AI: A classification loss that measures the distance between predicted and target distributions.
+
+USER: what is overfitting
+AI: The model memorizes training data but fails to generalize to new data.
+
+USER: how to prevent overfitting
+AI: Add data, use regularization, early stopping, dropout, and proper validation.
+
+USER: what is gradient clipping
+AI: Limiting gradient magnitude to keep training stable and avoid exploding updates.
+
+USER: what is the learning rate
+AI: The step size for parameter updates; too large is unstable, too small is slow.
+
+USER: how does batch size affect training
+AI: Small batches are noisier; large batches are steadier but heavier on memory.
+
+USER: what is an epoch
+AI: One full pass over the training dataset.
+
+USER: what is a dataset
+AI: A collection of input–label examples used for training and evaluation.
+
+USER: explain top k and top p
+AI: Top-k keeps the k highest-probability tokens; top-p keeps tokens whose cumulative mass reaches p.
+
+USER: what is temperature in sampling
+AI: A logits scale: lower → more deterministic; higher → more diverse.
+
+USER: when to use char-level
+AI: For small datasets, mixed-language text, or when a word/subword vocab isn’t ready.
+
+USER: limitations of char-level
+AI: Long-range coherence is harder; sequences must be longer to stay consistent.
+
+USER: how to improve answer quality
+AI: Expand the Q&A corpus, lower temperature, and use a moderate top-p.
+
+USER: how is your answer structured
+AI: Brief definition, key points, and practical tips when relevant.
+
+USER: if you don't know the answer
+AI: I’ll say I don’t know or ask you to narrow the question.
+
+USER: what is validation
+AI: Checking performance on non-training data to monitor generalization.
+
+USER: what is a seed
+AI: An initial random value so experiments are reproducible.
+
+USER: what is regularization
+AI: Techniques that constrain model complexity, e.g., weight decay or dropout.
+
+USER: what is teacher forcing
+AI: During training, the model receives the true previous token instead of its own prediction.
+
+USER: common metrics for language models
+AI: Perplexity (PPL) and loss; lower is better.
+
+USER: what is perplexity
+AI: The exponential of cross-entropy; it quantifies model uncertainty.
+
+USER: what is the adam optimizer
+AI: An adaptive optimizer using momentum and gradient moments.
+
+USER: why is my model gibberish
+AI: Too little data, char-level limits, or sampling too random; add data and lower temperature.
+
+USER: example of safe sampling settings
+AI: temperature=0.6, top_p=0.85, max_new=200, light repetition penalty.
+
+USER: how to write a good prompt
+AI: State the task, constraints, and desired output format explicitly.
+
+USER: what is attention
+AI: A mechanism that weights relevant parts of the input for the current prediction.
+
+USER: what is a token
+AI: The basic text unit the model reads—character or subword.
+
+USER: explain simple evaluation
+AI: Split train/validation; track validation loss; avoid large train–valid gaps.
+
+USER: what is early stopping
+AI: Stop training when validation stops improving for several checks.
+
+USER: what is weight decay
+AI: L2 regularization that discourages large weights.
+
+USER: when do I need more data
+AI: When validation loss stays high despite a reasonable architecture.
+
+USER: how to add data quickly
+AI: Add relevant Q&A pairs, varied phrasings, and paraphrases.
+
+USER: example greeting
+AI: Hello! How can I help you?
+
+USER: example of a concise answer
+AI: Sure. In short: use more data and lower the temperature.
+
+USER: concise definition of ai
+AI: A system that learns from data to make decisions automatically.
+
+USER: concise definition of rnn
+AI: A recurrent network that maintains context via a hidden state.
+
+USER: concise definition of lstm
+AI: An RNN variant with gates that control memory and forgetting.
+
+USER: concise definition of transformer
+AI: A parallel attention-based model strong on long-range context.
+
+USER: what is top n
+AI: Like top-k: restrict choices to the top N tokens.
+
+USER: when to use low temperature
+AI: When you want consistent, factual, less random outputs.
+
+USER: when to use high temperature
+AI: When you want more variety or creative phrasing.
+
+USER: brief debugging tips
+AI: Verify I/O, overfit a tiny subset first, then scale up gradually.
+
+USER: what is deterministic sampling
+AI: Take the argmax token; coherent but prone to repetition.
+
+USER: what is nucleus sampling
+AI: Sample within a probability mass p, proportionally to probabilities.
+
+USER: what is your format
+AI: Use “USER:” and “AI:” on each line to keep the pattern consistent.
+
+USER: thank you
+AI: You’re welcome! Happy to help.

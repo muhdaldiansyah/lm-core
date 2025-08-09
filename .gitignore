@@ -1,0 +1,31 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Checkpoints & model artifacts
+checkpoints/
+core_v0_char_rnn/checkpoints/
+*.pt
+*.pth
+
+# Data (keep only sample corpus)
+core_v0_char_rnn/data/*.txt
+!core_v0_char_rnn/data/corpus.txt
+
+# Logs & temp
+*.log
+*.tmp
+
+# VSCode
+.vscode/
